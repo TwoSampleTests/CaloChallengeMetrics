@@ -1,1 +1,5 @@
 GMetrics
+CaloChallengeCode/dataset_copy
+CaloChallengeCode/source
+*__pycache__*
+*nohup.out*
