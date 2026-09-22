@@ -1,6 +1,10 @@
-GMetrics
+/GMetrics/
+/CaloChallenge/
+/JetNetMetrics/
+/NysMMD/
+
 *__pycache__*
 *nohup.out*
 
-# Obsolete local copy; evaluation code is maintained in the CaloChallenge submodule.
+# Obsolete local copy; evaluation code is maintained in the independent CaloChallenge repository.
 /CaloChallengeCode/
