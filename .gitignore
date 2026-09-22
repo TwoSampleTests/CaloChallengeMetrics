@@ -1,5 +1,6 @@
 GMetrics
-CaloChallengeCode/dataset_copy
-CaloChallengeCode/source
 *__pycache__*
 *nohup.out*
+
+# Obsolete local copy; evaluation code is maintained in the CaloChallenge submodule.
+/CaloChallengeCode/
