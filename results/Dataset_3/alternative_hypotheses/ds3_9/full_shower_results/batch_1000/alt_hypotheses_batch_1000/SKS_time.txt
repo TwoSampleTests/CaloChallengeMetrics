@@ -1,0 +1,1 @@
+Submission: CaloScore (distilled), Test: SKS, Batch batch_1000: Time: 29.26 seconds

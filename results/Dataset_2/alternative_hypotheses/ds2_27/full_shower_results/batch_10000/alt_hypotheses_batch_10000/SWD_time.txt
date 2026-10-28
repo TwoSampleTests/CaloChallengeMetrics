@@ -1,0 +1,1 @@
+Submission: CaloVAE+INN, Test: SWD, Batch batch_10000: Time: 68.74 seconds

@@ -1,0 +1,1 @@
+Submission: BoloGAN, Test: SWD, Batch batch_1000: Time: 1.42 seconds

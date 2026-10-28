@@ -1,0 +1,1 @@
+Submission: CaloClouds, Test: KS, Batch batch_500: Time: 46.38 seconds

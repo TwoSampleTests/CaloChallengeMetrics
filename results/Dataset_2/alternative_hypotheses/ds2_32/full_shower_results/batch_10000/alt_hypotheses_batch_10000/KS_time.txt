@@ -1,0 +1,1 @@
+Submission: CaloDiT, Test: KS, Batch batch_10000: Time: 118.10 seconds

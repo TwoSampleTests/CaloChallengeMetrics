@@ -1,0 +1,1 @@
+Submission: Calo-VQ(norm), Test: KS, Batch batch_100: Time: 20.25 seconds

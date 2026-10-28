@@ -1,0 +1,1 @@
+Submission: Calo-VQ(norm), Test: SWD, Batch batch_1000: Time: 42.68 seconds

@@ -1,0 +1,1 @@
+Submission: CaloVAE+INN, Test: KS, Batch batch_5000: Time: 366.30 seconds

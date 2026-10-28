@@ -1,0 +1,1 @@
+Submission: iCaloFlow (teacher), Test: KS, Batch batch_10000: Time: 117.83 seconds

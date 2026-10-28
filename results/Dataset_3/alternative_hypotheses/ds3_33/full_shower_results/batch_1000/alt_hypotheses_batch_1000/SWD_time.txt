@@ -1,0 +1,1 @@
+Submission: CaloDREAM, Test: SWD, Batch batch_1000: Time: 42.86 seconds

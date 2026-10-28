@@ -1,0 +1,1 @@
+Submission: CaloShower3GAN, Test: SWD, Batch batch_10000: Time: 8.19 seconds

@@ -1,0 +1,1 @@
+Submission: CaloPointFlow, Test: MMD, Batch batch_1000: Time: 28.66 seconds

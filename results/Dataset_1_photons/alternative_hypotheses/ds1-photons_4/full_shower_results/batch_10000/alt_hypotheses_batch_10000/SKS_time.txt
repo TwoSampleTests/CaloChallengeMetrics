@@ -1,0 +1,1 @@
+Submission: CaloINN, Test: SKS, Batch batch_10000: Time: 10.97 seconds

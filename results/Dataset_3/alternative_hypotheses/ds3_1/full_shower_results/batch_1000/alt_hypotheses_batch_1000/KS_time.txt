@@ -1,0 +1,1 @@
+Submission: CaloDiffusion, Test: KS, Batch batch_1000: Time: 78.02 seconds

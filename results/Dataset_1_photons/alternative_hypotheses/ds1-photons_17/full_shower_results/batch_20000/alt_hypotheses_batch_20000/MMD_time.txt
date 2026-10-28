@@ -1,0 +1,1 @@
+Submission: BoloGAN, Test: MMD, Batch batch_20000: Time: 53.90 seconds

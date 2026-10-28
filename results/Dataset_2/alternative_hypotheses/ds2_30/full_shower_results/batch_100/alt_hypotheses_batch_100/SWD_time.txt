@@ -1,0 +1,1 @@
+Submission: CaloLatent, Test: SWD, Batch batch_100: Time: 1.53 seconds

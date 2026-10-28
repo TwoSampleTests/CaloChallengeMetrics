@@ -1,0 +1,1 @@
+Submission: CaloGraph, Test: MMD, Batch batch_100: Time: 2.50 seconds

@@ -1,0 +1,1 @@
+Submission: Calo-VQ(norm), Test: MMD, Batch batch_10000: Time: 305.08 seconds

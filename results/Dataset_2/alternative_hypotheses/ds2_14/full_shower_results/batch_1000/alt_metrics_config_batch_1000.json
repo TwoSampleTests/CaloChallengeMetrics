@@ -1,0 +1,223 @@
+{
+    "HLF_metrics": {
+        "mmd": {
+            "name": "mmd",
+            "gpu_dev": "/device:GPU:1",
+            "cpu_dev": "/CPU:1",
+            "object_name": "MMDMetricNull",
+            "class_name": "GMetrics.MMDMetric",
+            "kwargs": {
+                "degree": 4,
+                "block_size": 10000,
+                "normalise": false,
+                "verbose": true
+            },
+            "result_key": "metric_list",
+            "scale_func": "callable: <lambda>",
+            "scale_func_string": "lambda ns, ndims: 1",
+            "test_config": {
+                "niter": 1000,
+                "batch_size_test": 1000,
+                "batch_size_gen": 100000,
+                "small_sample_threshold": 1,
+                "dtype_input": "float32",
+                "seed_input": 0,
+                "use_tf": true,
+                "mirror_strategy": false,
+                "verbose": false
+            },
+            "max_vectorize": 8,
+            "latex": "$t_{\\mathrm{MMD}}$",
+            "null_file": "/teo_fs_fast/projects/GENOVA/CaloChallenge/Dataset_2/alternative_hypotheses/ds2_14/full_shower_results/batch_1000/alt_hypotheses_batch_1000/MMD.json",
+            "thresholds": [
+                [
+                    0.68,
+                    [
+                        680,
+                        320
+                    ],
+                    0.026552680879831314
+                ],
+                [
+                    0.95,
+                    [
+                        950,
+                        50
+                    ],
+                    0.042866598814725876
+                ],
+                [
+                    0.99,
+                    [
+                        990,
+                        10
+                    ],
+                    0.05467582866549492
+                ]
+            ]
+        },
+        "ks": {
+            "name": "ks",
+            "gpu_dev": "/device:GPU:1",
+            "cpu_dev": "/CPU:1",
+            "object_name": "KSTestNull",
+            "class_name": "GMetrics.KSTest",
+            "kwargs": {
+                "verbose": false
+            },
+            "result_key": "statistic_means",
+            "scale_func": "callable: <lambda>",
+            "scale_func_string": "lambda ns, _: np.sqrt(ns)",
+            "test_config": {
+                "niter": 1000,
+                "batch_size_test": 1000,
+                "batch_size_gen": 100000,
+                "small_sample_threshold": 1,
+                "dtype_input": "float32",
+                "seed_input": 0,
+                "use_tf": true,
+                "mirror_strategy": false,
+                "verbose": false
+            },
+            "max_vectorize": 6480,
+            "latex": "$t_{\\overline{\\mathrm{KS}}}$",
+            "null_file": "/teo_fs_fast/projects/GENOVA/CaloChallenge/Dataset_2/alternative_hypotheses/ds2_14/full_shower_results/batch_1000/alt_hypotheses_batch_1000/KS.json",
+            "thresholds": [
+                [
+                    0.68,
+                    [
+                        680,
+                        320
+                    ],
+                    0.5597003698348999
+                ],
+                [
+                    0.95,
+                    [
+                        950,
+                        50
+                    ],
+                    0.7466674447059631
+                ],
+                [
+                    0.99,
+                    [
+                        990,
+                        10
+                    ],
+                    0.8747926950454712
+                ]
+            ]
+        },
+        "sks": {
+            "name": "sks",
+            "gpu_dev": "/device:GPU:1",
+            "cpu_dev": "/CPU:1",
+            "object_name": "SKSTestNull",
+            "class_name": "GMetrics.SKSTest",
+            "kwargs": {
+                "nslices": 200,
+                "seed_slicing": 0,
+                "verbose": false
+            },
+            "result_key": "metric_means",
+            "scale_func": "callable: <lambda>",
+            "scale_func_string": "lambda ns, _: np.sqrt(ns)",
+            "test_config": {
+                "niter": 1000,
+                "batch_size_test": 1000,
+                "batch_size_gen": 100000,
+                "small_sample_threshold": 1,
+                "dtype_input": "float32",
+                "seed_input": 0,
+                "use_tf": true,
+                "mirror_strategy": false,
+                "verbose": false
+            },
+            "max_vectorize": 10,
+            "latex": "$t_{\\mathrm{SKS}}$",
+            "null_file": "/teo_fs_fast/projects/GENOVA/CaloChallenge/Dataset_2/alternative_hypotheses/ds2_14/full_shower_results/batch_1000/alt_hypotheses_batch_1000/SKS.json",
+            "thresholds": [
+                [
+                    0.68,
+                    [
+                        680,
+                        320
+                    ],
+                    0.9780562520027161
+                ],
+                [
+                    0.95,
+                    [
+                        950,
+                        50
+                    ],
+                    1.2498503923416138
+                ],
+                [
+                    0.99,
+                    [
+                        990,
+                        10
+                    ],
+                    1.4479659795761108
+                ]
+            ]
+        },
+        "swd": {
+            "name": "swd",
+            "gpu_dev": "/device:GPU:1",
+            "cpu_dev": "/CPU:1",
+            "object_name": "SWDMetricNull",
+            "class_name": "GMetrics.SWDMetric",
+            "kwargs": {
+                "nslices": 200,
+                "seed_slicing": 0,
+                "verbose": false
+            },
+            "result_key": "metric_means",
+            "scale_func": "callable: <lambda>",
+            "scale_func_string": "lambda ns, ndims: np.sqrt(ns/ndims)",
+            "test_config": {
+                "niter": 1000,
+                "batch_size_test": 1000,
+                "batch_size_gen": 100000,
+                "small_sample_threshold": 1,
+                "dtype_input": "float32",
+                "seed_input": 0,
+                "use_tf": true,
+                "mirror_strategy": false,
+                "verbose": false
+            },
+            "max_vectorize": 10,
+            "latex": "$t_{\\mathrm{SW}}$",
+            "null_file": "/teo_fs_fast/projects/GENOVA/CaloChallenge/Dataset_2/alternative_hypotheses/ds2_14/full_shower_results/batch_1000/alt_hypotheses_batch_1000/SWD.json",
+            "thresholds": [
+                [
+                    0.68,
+                    [
+                        680,
+                        320
+                    ],
+                    1.15354323387146
+                ],
+                [
+                    0.95,
+                    [
+                        950,
+                        50
+                    ],
+                    1.7318072319030762
+                ],
+                [
+                    0.99,
+                    [
+                        990,
+                        10
+                    ],
+                    2.2519848346710205
+                ]
+            ]
+        }
+    }
+}

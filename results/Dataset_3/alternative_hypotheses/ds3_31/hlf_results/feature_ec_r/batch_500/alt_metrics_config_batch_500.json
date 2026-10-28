@@ -1,0 +1,195 @@
+{
+    "HLF_metrics": {
+        "mmd": {
+            "name": "mmd",
+            "object_name": "MMDMetricNull",
+            "class_name": "GMetrics.MMDMetric",
+            "kwargs": {
+                "degree": 4,
+                "block_size": 10000,
+                "normalise": false,
+                "verbose": true
+            },
+            "result_key": "metric_list",
+            "scale_func": "callable: <lambda>",
+            "scale_func_string": "lambda ns, ndims: 1",
+            "test_config": {
+                "niter": 1000,
+                "batch_size_test": 500,
+                "batch_size_gen": 10000,
+                "small_sample_threshold": 1,
+                "dtype_input": "float32",
+                "seed_input": 0,
+                "use_tf": true,
+                "mirror_strategy": false,
+                "verbose": false
+            },
+            "max_vectorize": 8,
+            "latex": "$t_{\\mathrm{MMD}}$",
+            "null_file": "/teo_fs_fast/projects/GENOVA/CaloChallenge/Dataset_3/alternative_hypotheses/ds3_31/hlf_results/feature_ec_r/batch_500/alt_hypotheses_batch_500/MMD.json"
+        },
+        "ks": {
+            "name": "ks",
+            "gpu_dev": "/device:GPU:1",
+            "cpu_dev": "/CPU:1",
+            "object_name": "KSTestNull",
+            "class_name": "GMetrics.KSTest",
+            "kwargs": {
+                "verbose": false
+            },
+            "result_key": "statistic_means",
+            "scale_func": "callable: <lambda>",
+            "scale_func_string": "lambda ns, _: np.sqrt(ns)",
+            "test_config": {
+                "niter": 1000,
+                "batch_size_test": 500,
+                "batch_size_gen": 10000,
+                "small_sample_threshold": 1,
+                "dtype_input": "float32",
+                "seed_input": 0,
+                "use_tf": true,
+                "mirror_strategy": false,
+                "verbose": false
+            },
+            "max_vectorize": 1000,
+            "latex": "$t_{\\overline{\\mathrm{KS}}}$",
+            "null_file": "/teo_fs_fast/projects/GENOVA/CaloChallenge/Dataset_3/alternative_hypotheses/ds3_31/hlf_results/feature_ec_r/batch_500/alt_hypotheses_batch_500/KS.json",
+            "thresholds": [
+                [
+                    0.68,
+                    [
+                        688,
+                        324
+                    ],
+                    2.8558881282806396
+                ],
+                [
+                    0.95,
+                    [
+                        961,
+                        51
+                    ],
+                    3.106761932373047
+                ],
+                [
+                    0.99,
+                    [
+                        1001,
+                        11
+                    ],
+                    3.229037046432495
+                ]
+            ]
+        },
+        "sks": {
+            "name": "sks",
+            "gpu_dev": "/device:GPU:1",
+            "cpu_dev": "/CPU:1",
+            "object_name": "SKSTestNull",
+            "class_name": "GMetrics.SKSTest",
+            "kwargs": {
+                "nslices": 200,
+                "seed_slicing": 0,
+                "verbose": false
+            },
+            "result_key": "metric_means",
+            "scale_func": "callable: <lambda>",
+            "scale_func_string": "lambda ns, _: np.sqrt(ns)",
+            "test_config": {
+                "niter": 1000,
+                "batch_size_test": 500,
+                "batch_size_gen": 10000,
+                "small_sample_threshold": 1,
+                "dtype_input": "float32",
+                "seed_input": 0,
+                "use_tf": true,
+                "mirror_strategy": false,
+                "verbose": false
+            },
+            "max_vectorize": 10,
+            "latex": "$t_{\\mathrm{SKS}}$",
+            "null_file": "/teo_fs_fast/projects/GENOVA/CaloChallenge/Dataset_3/alternative_hypotheses/ds3_31/hlf_results/feature_ec_r/batch_500/alt_hypotheses_batch_500/SKS.json",
+            "thresholds": [
+                [
+                    0.68,
+                    [
+                        680,
+                        320
+                    ],
+                    1.8285869359970093
+                ],
+                [
+                    0.95,
+                    [
+                        950,
+                        50
+                    ],
+                    2.032396078109741
+                ],
+                [
+                    0.99,
+                    [
+                        990,
+                        10
+                    ],
+                    2.1365926265716553
+                ]
+            ]
+        },
+        "swd": {
+            "name": "swd",
+            "gpu_dev": "/device:GPU:1",
+            "cpu_dev": "/CPU:1",
+            "object_name": "SWDMetricNull",
+            "class_name": "GMetrics.SWDMetric",
+            "kwargs": {
+                "nslices": 200,
+                "seed_slicing": 0,
+                "verbose": false
+            },
+            "result_key": "metric_means",
+            "scale_func": "callable: <lambda>",
+            "scale_func_string": "lambda ns, ndims: np.sqrt(ns/ndims)",
+            "test_config": {
+                "niter": 1000,
+                "batch_size_test": 500,
+                "batch_size_gen": 10000,
+                "small_sample_threshold": 1,
+                "dtype_input": "float32",
+                "seed_input": 0,
+                "use_tf": true,
+                "mirror_strategy": false,
+                "verbose": false
+            },
+            "max_vectorize": 10,
+            "latex": "$t_{\\mathrm{SW}}$",
+            "null_file": "/teo_fs_fast/projects/GENOVA/CaloChallenge/Dataset_3/alternative_hypotheses/ds3_31/hlf_results/feature_ec_r/batch_500/alt_hypotheses_batch_500/SWD.json",
+            "thresholds": [
+                [
+                    0.68,
+                    [
+                        680,
+                        320
+                    ],
+                    4.138486385345459
+                ],
+                [
+                    0.95,
+                    [
+                        950,
+                        50
+                    ],
+                    4.688467502593994
+                ],
+                [
+                    0.99,
+                    [
+                        990,
+                        10
+                    ],
+                    5.064598560333252
+                ]
+            ]
+        }
+    }
+}

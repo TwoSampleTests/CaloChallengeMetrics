@@ -1,0 +1,1 @@
+Submission: CaloGraph, Test: SWD, Batch batch_500: Time: 1.14 seconds

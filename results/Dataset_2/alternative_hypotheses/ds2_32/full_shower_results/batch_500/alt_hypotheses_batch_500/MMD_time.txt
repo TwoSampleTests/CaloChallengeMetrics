@@ -1,0 +1,1 @@
+Submission: CaloDiT, Test: MMD, Batch batch_500: Time: 4.83 seconds

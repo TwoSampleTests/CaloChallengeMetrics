@@ -1,0 +1,1 @@
+Submission: CaloLatent, Test: SKS, Batch batch_5000: Time: 25.09 seconds

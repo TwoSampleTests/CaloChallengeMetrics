@@ -1,0 +1,1 @@
+Submission: Geant4-Transformer, Test: SWD, Batch batch_1000: Time: 42.35 seconds

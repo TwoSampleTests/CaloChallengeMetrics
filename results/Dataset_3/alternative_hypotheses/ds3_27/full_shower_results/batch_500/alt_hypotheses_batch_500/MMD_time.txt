@@ -1,0 +1,1 @@
+Submission: CaloVAE+INN, Test: MMD, Batch batch_500: Time: 14.67 seconds

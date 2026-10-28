@@ -1,0 +1,1 @@
+Submission: iCaloFlow (teacher), Test: SWD, Batch batch_1000: Time: 42.27 seconds

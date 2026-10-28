@@ -1,0 +1,1 @@
+Submission: CaloShower3GAN, Test: SKS, Batch batch_20000: Time: 13.52 seconds

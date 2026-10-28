@@ -1,0 +1,1 @@
+Submission: conv. L2LFlows, Test: SWD, Batch batch_10000: Time: 68.25 seconds

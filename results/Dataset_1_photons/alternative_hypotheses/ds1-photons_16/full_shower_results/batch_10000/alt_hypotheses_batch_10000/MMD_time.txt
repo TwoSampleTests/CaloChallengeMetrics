@@ -1,0 +1,1 @@
+Submission: CaloMan, Test: MMD, Batch batch_10000: Time: 30.50 seconds

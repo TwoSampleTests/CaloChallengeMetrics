@@ -1,0 +1,1 @@
+Submission: CaloDiT, Test: SWD, Batch batch_5000: Time: 34.50 seconds

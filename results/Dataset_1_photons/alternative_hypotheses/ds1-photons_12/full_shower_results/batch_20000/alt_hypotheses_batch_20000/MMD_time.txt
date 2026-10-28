@@ -1,0 +1,1 @@
+Submission: CaloFlow (student), Test: MMD, Batch batch_20000: Time: 57.41 seconds

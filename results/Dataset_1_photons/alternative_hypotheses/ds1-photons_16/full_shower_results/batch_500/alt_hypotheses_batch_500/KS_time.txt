@@ -1,0 +1,1 @@
+Submission: CaloMan, Test: KS, Batch batch_500: Time: 1.04 seconds

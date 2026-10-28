@@ -1,0 +1,1 @@
+Submission: CaloClouds, Test: MMD, Batch batch_1000: Time: 28.67 seconds

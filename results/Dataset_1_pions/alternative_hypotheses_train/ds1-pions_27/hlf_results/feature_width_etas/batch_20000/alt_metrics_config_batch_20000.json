@@ -1,0 +1,195 @@
+{
+    "HLF_metrics": {
+        "mmd": {
+            "name": "mmd",
+            "object_name": "MMDMetricNull",
+            "class_name": "GMetrics.MMDMetric",
+            "kwargs": {
+                "degree": 4,
+                "block_size": 10000,
+                "normalise": false,
+                "verbose": true
+            },
+            "result_key": "metric_list",
+            "scale_func": "callable: <lambda>",
+            "scale_func_string": "lambda ns, ndims: 1",
+            "test_config": {
+                "niter": 1000,
+                "batch_size_test": 20000,
+                "batch_size_gen": 10000,
+                "small_sample_threshold": 1,
+                "dtype_input": "float32",
+                "seed_input": 42,
+                "use_tf": true,
+                "mirror_strategy": false,
+                "verbose": false
+            },
+            "max_vectorize": 8,
+            "latex": "$t_{\\mathrm{MMD}}$",
+            "null_file": "/teo_fs_fast/projects/GENOVA/CaloChallenge/Dataset_1_pions/alternative_hypotheses_train/ds1-pions_27/hlf_results/feature_width_etas/batch_20000/alt_hypotheses_batch_20000/MMD.json"
+        },
+        "ks": {
+            "name": "ks",
+            "gpu_dev": "/device:GPU:1",
+            "cpu_dev": "/CPU:1",
+            "object_name": "KSTestNull",
+            "class_name": "GMetrics.KSTest",
+            "kwargs": {
+                "verbose": false
+            },
+            "result_key": "statistic_means",
+            "scale_func": "callable: <lambda>",
+            "scale_func_string": "lambda ns, _: np.sqrt(ns)",
+            "test_config": {
+                "niter": 1000,
+                "batch_size_test": 20000,
+                "batch_size_gen": 10000,
+                "small_sample_threshold": 1,
+                "dtype_input": "float32",
+                "seed_input": 42,
+                "use_tf": true,
+                "mirror_strategy": false,
+                "verbose": false
+            },
+            "max_vectorize": 1000,
+            "latex": "$t_{\\overline{\\mathrm{KS}}}$",
+            "null_file": "/teo_fs_fast/projects/GENOVA/CaloChallenge/Dataset_1_pions/alternative_hypotheses_train/ds1-pions_27/hlf_results/feature_width_etas/batch_20000/alt_hypotheses_batch_20000/KS.json",
+            "thresholds": [
+                [
+                    0.68,
+                    [
+                        680,
+                        320
+                    ],
+                    6.558750629425049
+                ],
+                [
+                    0.95,
+                    [
+                        950,
+                        50
+                    ],
+                    6.837499141693115
+                ],
+                [
+                    0.99,
+                    [
+                        990,
+                        10
+                    ],
+                    6.972500801086426
+                ]
+            ]
+        },
+        "sks": {
+            "name": "sks",
+            "gpu_dev": "/device:GPU:1",
+            "cpu_dev": "/CPU:1",
+            "object_name": "SKSTestNull",
+            "class_name": "GMetrics.SKSTest",
+            "kwargs": {
+                "nslices": 200,
+                "seed_slicing": 42,
+                "verbose": false
+            },
+            "result_key": "metric_means",
+            "scale_func": "callable: <lambda>",
+            "scale_func_string": "lambda ns, _: np.sqrt(ns)",
+            "test_config": {
+                "niter": 1000,
+                "batch_size_test": 20000,
+                "batch_size_gen": 10000,
+                "small_sample_threshold": 1,
+                "dtype_input": "float32",
+                "seed_input": 42,
+                "use_tf": true,
+                "mirror_strategy": false,
+                "verbose": false
+            },
+            "max_vectorize": 10,
+            "latex": "$t_{\\mathrm{SKS}}$",
+            "null_file": "/teo_fs_fast/projects/GENOVA/CaloChallenge/Dataset_1_pions/alternative_hypotheses_train/ds1-pions_27/hlf_results/feature_width_etas/batch_20000/alt_hypotheses_batch_20000/SKS.json",
+            "thresholds": [
+                [
+                    0.68,
+                    [
+                        680,
+                        320
+                    ],
+                    6.147850036621094
+                ],
+                [
+                    0.95,
+                    [
+                        950,
+                        50
+                    ],
+                    6.457400321960449
+                ],
+                [
+                    0.99,
+                    [
+                        990,
+                        10
+                    ],
+                    6.633275985717773
+                ]
+            ]
+        },
+        "swd": {
+            "name": "swd",
+            "gpu_dev": "/device:GPU:1",
+            "cpu_dev": "/CPU:1",
+            "object_name": "SWDMetricNull",
+            "class_name": "GMetrics.SWDMetric",
+            "kwargs": {
+                "nslices": 200,
+                "seed_slicing": 42,
+                "verbose": false
+            },
+            "result_key": "metric_means",
+            "scale_func": "callable: <lambda>",
+            "scale_func_string": "lambda ns, ndims: np.sqrt(ns/ndims)",
+            "test_config": {
+                "niter": 1000,
+                "batch_size_test": 20000,
+                "batch_size_gen": 10000,
+                "small_sample_threshold": 1,
+                "dtype_input": "float32",
+                "seed_input": 42,
+                "use_tf": true,
+                "mirror_strategy": false,
+                "verbose": false
+            },
+            "max_vectorize": 10,
+            "latex": "$t_{\\mathrm{SW}}$",
+            "null_file": "/teo_fs_fast/projects/GENOVA/CaloChallenge/Dataset_1_pions/alternative_hypotheses_train/ds1-pions_27/hlf_results/feature_width_etas/batch_20000/alt_hypotheses_batch_20000/SWD.json",
+            "thresholds": [
+                [
+                    0.68,
+                    [
+                        680,
+                        320
+                    ],
+                    422.260009765625
+                ],
+                [
+                    0.95,
+                    [
+                        950,
+                        50
+                    ],
+                    455.82421875
+                ],
+                [
+                    0.99,
+                    [
+                        990,
+                        10
+                    ],
+                    475.6116943359375
+                ]
+            ]
+        }
+    }
+}

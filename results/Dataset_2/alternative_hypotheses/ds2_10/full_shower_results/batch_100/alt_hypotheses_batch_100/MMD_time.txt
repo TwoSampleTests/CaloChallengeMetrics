@@ -1,0 +1,1 @@
+Submission: CaloScore (single-shot), Test: MMD, Batch batch_100: Time: 2.29 seconds

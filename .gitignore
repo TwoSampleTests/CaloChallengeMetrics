@@ -1,10 +1,28 @@
+.vscode/
+
 /GMetrics/
 /CaloChallenge/
+/CaloChallengeMetrics_paper/
 /JetNetMetrics/
 /NysMMD/
+/old/
 
 *__pycache__*
 *nohup.out*
+
+/results/Dataset_1_photons/data/
+/results/Dataset_1_photons/alternative_hypotheses_modified/
+/results/Dataset_1_photons/logs/
+/results/Dataset_1_photons/submissions/
+/results/Dataset_1_pions/data/
+/results/Dataset_1_pions/logs/
+/results/Dataset_1_pions/submissions/
+/results/Dataset_2/data/
+/results/Dataset_2/logs/
+/results/Dataset_2/submissions/
+/results/Dataset_3/data/
+/results/Dataset_3/logs/
+/results/Dataset_3/submissions/
 
 # Obsolete local copy; evaluation code is maintained in the independent CaloChallenge repository.
 /CaloChallengeCode/

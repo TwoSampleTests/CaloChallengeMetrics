@@ -1,0 +1,1 @@
+Submission: Geant4-Transformer, Test: SKS, Batch batch_100: Time: 3.74 seconds

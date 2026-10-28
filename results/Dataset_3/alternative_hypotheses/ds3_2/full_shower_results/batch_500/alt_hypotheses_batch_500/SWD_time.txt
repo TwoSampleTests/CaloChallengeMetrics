@@ -1,0 +1,1 @@
+Submission: L2LFlows-MAF, Test: SWD, Batch batch_500: Time: 22.30 seconds

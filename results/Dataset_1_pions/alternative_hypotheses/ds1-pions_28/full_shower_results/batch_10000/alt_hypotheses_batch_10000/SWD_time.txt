@@ -1,0 +1,1 @@
+Submission: CaloForest, Test: SWD, Batch batch_10000: Time: 7.98 seconds

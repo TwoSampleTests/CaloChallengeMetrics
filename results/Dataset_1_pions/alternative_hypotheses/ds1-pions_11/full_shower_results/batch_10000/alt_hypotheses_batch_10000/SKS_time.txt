@@ -1,0 +1,1 @@
+Submission: CaloFlow (teacher), Test: SKS, Batch batch_10000: Time: 6.80 seconds

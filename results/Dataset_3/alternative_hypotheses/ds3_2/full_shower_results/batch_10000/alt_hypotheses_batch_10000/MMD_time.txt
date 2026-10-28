@@ -1,0 +1,1 @@
+Submission: L2LFlows-MAF, Test: MMD, Batch batch_10000: Time: 276.71 seconds

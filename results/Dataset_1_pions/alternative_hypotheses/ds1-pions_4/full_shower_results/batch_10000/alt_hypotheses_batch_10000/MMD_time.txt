@@ -1,0 +1,1 @@
+Submission: CaloINN, Test: MMD, Batch batch_10000: Time: 24.86 seconds

@@ -1,0 +1,1 @@
+Submission: DNNCaloSim, Test: MMD, Batch batch_5000: Time: 15.11 seconds

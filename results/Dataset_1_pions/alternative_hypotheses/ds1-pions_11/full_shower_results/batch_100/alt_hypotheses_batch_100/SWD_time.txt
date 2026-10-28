@@ -1,0 +1,1 @@
+Submission: CaloFlow (teacher), Test: SWD, Batch batch_100: Time: 0.76 seconds

@@ -1,0 +1,1 @@
+Submission: Geant4-Transformer, Test: MMD, Batch batch_10000: Time: 298.25 seconds

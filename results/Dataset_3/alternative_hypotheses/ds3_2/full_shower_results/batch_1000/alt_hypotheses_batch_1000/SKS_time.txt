@@ -1,0 +1,1 @@
+Submission: L2LFlows-MAF, Test: SKS, Batch batch_1000: Time: 28.87 seconds

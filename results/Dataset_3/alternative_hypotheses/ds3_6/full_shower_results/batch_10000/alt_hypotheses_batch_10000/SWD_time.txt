@@ -1,0 +1,1 @@
+Submission: CaloClouds, Test: SWD, Batch batch_10000: Time: 421.34 seconds

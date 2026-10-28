@@ -1,0 +1,1 @@
+Submission: CaloMan, Test: SWD, Batch batch_5000: Time: 5.47 seconds

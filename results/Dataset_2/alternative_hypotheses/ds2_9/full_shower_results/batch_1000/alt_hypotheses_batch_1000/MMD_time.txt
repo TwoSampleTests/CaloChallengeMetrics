@@ -1,0 +1,1 @@
+Submission: CaloScore (distilled), Test: MMD, Batch batch_1000: Time: 7.84 seconds

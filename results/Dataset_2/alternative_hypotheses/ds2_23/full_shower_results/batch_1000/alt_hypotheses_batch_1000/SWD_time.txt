@@ -1,0 +1,1 @@
+Submission: CaloPointFlow, Test: SWD, Batch batch_1000: Time: 7.53 seconds

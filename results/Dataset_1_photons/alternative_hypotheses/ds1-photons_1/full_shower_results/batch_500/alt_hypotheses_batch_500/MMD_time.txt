@@ -1,0 +1,1 @@
+Submission: CaloDiffusion, Test: MMD, Batch batch_500: Time: 4.74 seconds

@@ -1,0 +1,1 @@
+Submission: CaloDiffusion, Test: SWD, Batch batch_20000: Time: 14.02 seconds

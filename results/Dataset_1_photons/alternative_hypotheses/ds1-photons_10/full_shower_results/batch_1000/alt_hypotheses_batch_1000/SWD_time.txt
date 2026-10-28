@@ -1,0 +1,1 @@
+Submission: CaloScore (single-shot), Test: SWD, Batch batch_1000: Time: 6.84 seconds

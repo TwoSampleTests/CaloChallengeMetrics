@@ -1,0 +1,1 @@
+Submission: CaloScore (distilled), Test: SWD, Batch batch_5000: Time: 34.32 seconds

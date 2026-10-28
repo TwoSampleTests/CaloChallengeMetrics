@@ -1,0 +1,1 @@
+Submission: DNNCaloSim, Test: KS, Batch batch_100: Time: 0.45 seconds

@@ -1,0 +1,1 @@
+Submission: conv. L2LFlows, Test: KS, Batch batch_100: Time: 20.27 seconds

@@ -1,0 +1,1 @@
+Submission: BoloGAN, Test: SKS, Batch batch_5000: Time: 3.83 seconds

@@ -1,0 +1,1 @@
+Submission: iCaloFlow (teacher), Test: MMD, Batch batch_10000: Time: 48.04 seconds

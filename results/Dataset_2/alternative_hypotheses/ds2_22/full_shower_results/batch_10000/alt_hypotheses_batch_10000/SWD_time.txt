@@ -1,0 +1,1 @@
+Submission: DeepTree, Test: SWD, Batch batch_10000: Time: 67.56 seconds

@@ -1,0 +1,1 @@
+Submission: Calo-VQ, Test: MMD, Batch batch_20000: Time: 50.83 seconds

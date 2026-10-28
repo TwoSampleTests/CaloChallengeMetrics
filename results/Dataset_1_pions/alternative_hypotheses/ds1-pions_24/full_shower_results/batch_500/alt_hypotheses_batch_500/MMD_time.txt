@@ -1,0 +1,1 @@
+Submission: CaloShowerGAN, Test: MMD, Batch batch_500: Time: 3.90 seconds

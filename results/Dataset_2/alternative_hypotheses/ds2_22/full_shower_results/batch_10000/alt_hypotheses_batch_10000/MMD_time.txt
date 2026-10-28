@@ -1,0 +1,1 @@
+Submission: DeepTree, Test: MMD, Batch batch_10000: Time: 48.08 seconds

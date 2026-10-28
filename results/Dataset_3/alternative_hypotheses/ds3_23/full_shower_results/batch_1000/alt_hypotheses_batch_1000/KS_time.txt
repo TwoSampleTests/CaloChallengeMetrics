@@ -1,0 +1,1 @@
+Submission: CaloPointFlow, Test: KS, Batch batch_1000: Time: 78.46 seconds

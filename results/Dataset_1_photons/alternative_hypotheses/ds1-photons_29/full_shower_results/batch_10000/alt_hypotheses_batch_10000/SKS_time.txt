@@ -1,0 +1,1 @@
+Submission: CaloGraph, Test: SKS, Batch batch_10000: Time: 6.99 seconds
