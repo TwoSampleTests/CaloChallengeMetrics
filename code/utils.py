@@ -7,7 +7,7 @@ import tensorflow_probability as tfp
 tfd = tfp.distributions
 import numpy as np
 from typing import Union
-sys.path.append("/teo_fs_fast/projects/GENOVA/CaloChallenge/CaloChallengeMetrics/")  # Adjust this path as needed to point to your project root
+sys.path.append("../")  # Adjust this path as needed to point to your project root
 import GMetrics
 import NysMMD
 

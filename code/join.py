@@ -1,9 +1,12 @@
+# This program is for merging the two .hdf5 files from Dataset 3 into a single .hdf5 file called dataset_3_full.hdf5
+# since the single file was too large to upload in one go, it had to be split into two 
+# to be merged together in series for evaluation 
+
+
+
+
 import h5py
 import numpy as np
-import os
-
-
-
 
 def extract_shower_and_energy(file_handle):
     """Reads .hdf5 file and returns showers and incident energies."""
@@ -11,10 +14,10 @@ def extract_shower_and_energy(file_handle):
     energies = file_handle['incident_energies'][:]
     return showers, energies
 
-reference_file_1 = "/teo_fs_fast/projects/GENOVA/CaloChallenge/Dataset_3/data/dataset_3_3.hdf5"
-reference_file_2 = "/teo_fs_fast/projects/GENOVA/CaloChallenge/Dataset_3/data/dataset_3_4.hdf5"
+reference_file_1 = "../results/Dataset_3/data/dataset_3_3.hdf5"
+reference_file_2 = "../results/Dataset_3/data/dataset_3_4.hdf5"
 
-output_file = "/teo_fs_fast/projects/GENOVA/CaloChallenge/Dataset_3/data/dataset_3_full.hdf5"
+output_file = "../results/Dataset_3/data/dataset_3_full.hdf5"
 
 # ---- load first file ----
 with h5py.File(reference_file_1, "r") as source_file:
