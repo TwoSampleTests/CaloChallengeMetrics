@@ -27,13 +27,12 @@ os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 import tensorflow as tf
 import tensorflow_probability as tfp
 tfd = tfp.distributions
-sys.path.append('/teo_fs_fast/projects/GENOVA/CaloChallenge/CaloChallengeMetrics/') 
+sys.path.append('../') 
 import GMetrics
 sys.path.pop()
-# Assuming HighLevelFeatures.py is in the same directory or Python path
-sys.path.append('/teo_fs_fast/projects/GENOVA/CaloChallenge/CaloChallengeMetrics/CaloChallenge/code/')
-import HighLevelFeatures as HLF
 
+sys.path.append('../CaloChallenge/code')
+import HighLevelFeatures as HLF
 gpus = tf.config.list_physical_devices('GPU')
 if gpus:
     try:
@@ -43,7 +42,7 @@ if gpus:
         print(e)
 
 sys.path.pop()
-from CaloChallenge.CaloChallengeMetrics.code.utils import BootstrapDistribution, PrefetchedKSTest, PrefetchedSKSTest, PrefetchedSWDMetric, PrefetchedMMDTest
+from utils import BootstrapDistribution, PrefetchedKSTest, PrefetchedSKSTest, PrefetchedSWDMetric, PrefetchedMMDTest
 
 def extract_shower_and_energy(file_handle):
     """Reads .hdf5 file and returns showers and incident energies."""

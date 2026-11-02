@@ -26,7 +26,7 @@
             },
             "max_vectorize": 8,
             "latex": "$t_{\\mathrm{MMD}}$",
-            "null_file": "/teo_fs_fast/projects/GENOVA/CaloChallenge/Dataset_1_pions/train_null/Null/hlf_results/feature_e_inc/batch_100/null_hypotheses_batch_100/MMD.json"
+            "null_file": "../results/Dataset_1_pions/train_null/Null/hlf_results/feature_e_inc/batch_100/null_hypotheses_batch_100/MMD.json"
         },
         "ks": {
             "name": "ks",
@@ -53,33 +53,7 @@
             },
             "max_vectorize": 1000,
             "latex": "$t_{\\overline{\\mathrm{KS}}}$",
-            "null_file": "/teo_fs_fast/projects/GENOVA/CaloChallenge/Dataset_1_pions/train_null/Null/hlf_results/feature_e_inc/batch_100/null_hypotheses_batch_100/KS.json",
-            "thresholds": [
-                [
-                    0.68,
-                    [
-                        680,
-                        320
-                    ],
-                    0.7778175473213196
-                ],
-                [
-                    0.95,
-                    [
-                        950,
-                        50
-                    ],
-                    1.2020814418792725
-                ],
-                [
-                    0.99,
-                    [
-                        990,
-                        10
-                    ],
-                    1.4142134189605713
-                ]
-            ]
+            "null_file": "../results/Dataset_1_pions/train_null/Null/hlf_results/feature_e_inc/batch_100/null_hypotheses_batch_100/KS.json"
         },
         "sks": {
             "name": "sks",
@@ -108,33 +82,7 @@
             },
             "max_vectorize": 10,
             "latex": "$t_{\\mathrm{SKS}}$",
-            "null_file": "/teo_fs_fast/projects/GENOVA/CaloChallenge/Dataset_1_pions/train_null/Null/hlf_results/feature_e_inc/batch_100/null_hypotheses_batch_100/SKS.json",
-            "thresholds": [
-                [
-                    0.68,
-                    [
-                        680,
-                        320
-                    ],
-                    0.7778176069259644
-                ],
-                [
-                    0.95,
-                    [
-                        950,
-                        50
-                    ],
-                    1.1313711404800415
-                ],
-                [
-                    0.99,
-                    [
-                        990,
-                        10
-                    ],
-                    1.4142135381698608
-                ]
-            ]
+            "null_file": "../results/Dataset_1_pions/train_null/Null/hlf_results/feature_e_inc/batch_100/null_hypotheses_batch_100/SKS.json"
         },
         "swd": {
             "name": "swd",
@@ -163,33 +111,7 @@
             },
             "max_vectorize": 10,
             "latex": "$t_{\\mathrm{SW}}$",
-            "null_file": "/teo_fs_fast/projects/GENOVA/CaloChallenge/Dataset_1_pions/train_null/Null/hlf_results/feature_e_inc/batch_100/null_hypotheses_batch_100/SWD.json",
-            "thresholds": [
-                [
-                    0.68,
-                    [
-                        680,
-                        320
-                    ],
-                    569776.5
-                ],
-                [
-                    0.95,
-                    [
-                        950,
-                        50
-                    ],
-                    1009327.625
-                ],
-                [
-                    0.99,
-                    [
-                        990,
-                        10
-                    ],
-                    1350440.5
-                ]
-            ]
+            "null_file": "../results/Dataset_1_pions/train_null/Null/hlf_results/feature_e_inc/batch_100/null_hypotheses_batch_100/SWD.json"
         }
     }
 }
