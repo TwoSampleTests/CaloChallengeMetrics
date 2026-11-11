@@ -26,7 +26,3 @@
 
 # Obsolete local copy; evaluation code is maintained in the independent CaloChallenge repository.
 /CaloChallengeCode/
-
-# Local Git metadata repair backups
-/.git.permission-backup-*/
-/.git.repaired/
