@@ -4,27 +4,27 @@
 # Paths and Directories
 # ==========================================
 # Update these paths as needed
-SUBMISSIONS_DIR="../results/Dataset_1_pions/submissions"
-REFERENCE_FILE="../results/Dataset_1_pions/data/dataset_1_pions_1.hdf5"  #file_1 is for training, file _2 is for metric evaluation 
-OUTPUT_DIR="../results/Dataset_1_pions/alternative_hypotheses_train"
-LOG_DIR="../results/Dataset_1_pions/logs"
+SUBMISSIONS_DIR="../results/Dataset_3/submissions"
+REFERENCE_FILE="../results/Dataset_3/data/dataset_3_2.hdf5"  #file_1 is for training, file _2 is for metric evaluation for ds3 file _full is the merge of 3 and 4 (split of eval data)
+OUTPUT_DIR="../results/Dataset_3/alternative_hypotheses"
+LOG_DIR="../results/Dataset_3/logs"
 
 # ==========================================
 # Python Script Parameters
 # ==========================================
 PYTHON_SCRIPT="evaluate_hypothesis.py" 
-PARTICLE_TYPE="pion"
-DATASET="1"
+PARTICLE_TYPE="electron"  #pion, photon, electron
+DATASET="3"  # 1, 2, or 3
 MODE="all"
 # Using arrays for arguments that take multiple values
-METRICS=("ks" "swd" "sks" "mmd")
-BATCHSIZES=("100" "500" "1000" "5000" "10000" "20000")
+METRICS=("ks" "swd" "sks")  #"ks" "swd" "sks" "mmd"
+BATCHSIZES=("20000")   #"100" "500" "1000" "5000" "10000" "20000"
 NITER="1000"
-NSLICES="200"
-MIN_ENERGY="10"     # minimal readout per voxel, ds1: 10, ds2/3: 0.5 keV / 0.033 = 0.01515 scaling factor
+NSLICES="200"  # 200
+MIN_ENERGY="0.01515"     # minimal readout per voxel, ds1: 10, ds2/3: 0.5 keV / 0.033 = 0.01515 scaling factor
 SMALL_SAMPLE="1"
-CPU="/CPU:1"  # choose CPU from available 
-GPU="/device:GPU:1"  # choose GPU from available
+CPU="/CPU:0"  # choose CPU from available 
+GPU="/device:GPU:0"  # choose GPU from available
 
 # ==========================================
 # Setup Environment & Logging
@@ -64,8 +64,8 @@ for SUBMISSION_FILE in "$SUBMISSIONS_DIR"/*.hdf5; do
 
     echo "Running evaluation on: $MODEL_NAME" | tee -a "$LOG_FILE"
     echo "Saving results to: $MODEL_OUTPUT_DIR" | tee -a "$LOG_FILE"
-
-    python "$PYTHON_SCRIPT" \
+#TF_FORCE_GPU_ALLOW_GROWTH=true\           #to better allocate memory and avoid OOM issues 
+    TF_FORCE_GPU_ALLOW_GROWTH=true python "$PYTHON_SCRIPT" \
         --reference_file "$REFERENCE_FILE" \
         --submission_file "$SUBMISSION_FILE" \
         --output_dir "$MODEL_OUTPUT_DIR" \

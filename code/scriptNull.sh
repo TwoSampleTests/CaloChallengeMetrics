@@ -12,26 +12,27 @@
 
 #SUBMISSIONS_DIR="../results/Dataset_2/submissions"
 
-REFERENCE_FILE="../results/Dataset_1_pions/data/dataset_1_pions_1.hdf5"
-OUTPUT_DIR="../results/Dataset_1_pions/train_null"
-LOG_DIR="../results/Dataset_1_pions/logs"
+REFERENCE_FILE="../results/Dataset_3/data/dataset_3_full.hdf5"
+OUTPUT_DIR="../results/Dataset_3/"
+LOG_DIR="../results/Dataset_3/logs"
 
 # ==========================================
 # Python Script Parameters
 # ==========================================
 PYTHON_SCRIPT="evaluate_hypothesis.py" 
-PARTICLE_TYPE="pion"
-DATASET="1"
+PARTICLE_TYPE="electron"  #pion, photon, electron
+DATASET="3"  # 1, 2, or 3
 MODE="all"
 # Using arrays for arguments that take multiple values
-METRICS=("ks" "swd" "sks" "mmd")
-BATCHSIZES=("100" "500" "1000" "5000" "10000" "20000")
+METRICS=("ks" "swd" "sks") #"ks" "swd" "sks" "mmd"
+BATCHSIZES=( "20000") #"100" "500" "1000" "5000" "10000" "20000"
 NITER="1000"
 NSLICES="200"  #slices for SWD, SKS default: 200
-MIN_ENERGY="10"  # minimal readout per voxel, ds1: 10, ds2/3: 0.5 keV / 0.033= 0.01515 scaling factor
+MIN_ENERGY="0.01515"  # minimal readout per voxel, ds1: 10, ds2/3: 0.5 keV / 0.033= 0.01515 scaling factor
 SMALL_SAMPLE="1"
 CPU="/CPU:2"  # choose CPU from available
 GPU="/device:GPU:2"  # choose GPU from available
+
 # ==========================================
 # Setup Environment & Logging
 # ==========================================
@@ -61,7 +62,7 @@ echo "Running null evaluation on: $MODEL_NAME" | tee -a "$LOG_FILE"
 echo "Saving results to: $MODEL_OUTPUT_DIR" | tee -a "$LOG_FILE"
 
 
-
+#TF_FORCE_GPU_ALLOW_GROWTH=true\           #to better allocate memory and avoid OOM issues 
 python "$PYTHON_SCRIPT" \
     --reference_file "$REFERENCE_FILE" \
     --output_dir "$MODEL_OUTPUT_DIR" \

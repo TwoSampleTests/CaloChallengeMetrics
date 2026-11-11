@@ -19,19 +19,19 @@
                 "batch_size_gen": 10000,
                 "small_sample_threshold": 1,
                 "dtype_input": "float32",
-                "seed_input": 0,
+                "seed_input": 42,
                 "use_tf": true,
                 "mirror_strategy": false,
                 "verbose": false
             },
             "max_vectorize": 8,
             "latex": "$t_{\\mathrm{MMD}}$",
-            "null_file": "/teo_fs_fast/projects/GENOVA/CaloChallenge/Dataset_3//Null/hlf_results/feature_ec_etas/batch_10000/null_hypotheses_batch_10000/MMD.json"
+            "null_file": "../results/Dataset_3//Null/hlf_results/feature_ec_etas/batch_10000/null_hypotheses_batch_10000/MMD.json"
         },
         "ks": {
             "name": "ks",
-            "gpu_dev": "/device:GPU:1",
-            "cpu_dev": "/CPU:1",
+            "gpu_dev": "/device:GPU:2",
+            "cpu_dev": "/CPU:2",
             "object_name": "KSTestNull",
             "class_name": "GMetrics.KSTest",
             "kwargs": {
@@ -46,14 +46,14 @@
                 "batch_size_gen": 10000,
                 "small_sample_threshold": 1,
                 "dtype_input": "float32",
-                "seed_input": 0,
+                "seed_input": 42,
                 "use_tf": true,
                 "mirror_strategy": false,
                 "verbose": false
             },
             "max_vectorize": 1000,
             "latex": "$t_{\\overline{\\mathrm{KS}}}$",
-            "null_file": "/teo_fs_fast/projects/GENOVA/CaloChallenge/Dataset_3//Null/hlf_results/feature_ec_etas/batch_10000/null_hypotheses_batch_10000/KS.json",
+            "null_file": "../results/Dataset_3//Null/hlf_results/feature_ec_etas/batch_10000/null_hypotheses_batch_10000/KS.json",
             "thresholds": [
                 [
                     0.68,
@@ -61,7 +61,7 @@
                         688,
                         324
                     ],
-                    0.8375288844108582
+                    0.8386293649673462
                 ],
                 [
                     0.95,
@@ -69,7 +69,7 @@
                         961,
                         51
                     ],
-                    0.9226963520050049
+                    0.9098111391067505
                 ],
                 [
                     0.99,
@@ -77,19 +77,19 @@
                         1001,
                         11
                     ],
-                    0.9819361567497253
+                    0.9695223569869995
                 ]
             ]
         },
         "sks": {
             "name": "sks",
-            "gpu_dev": "/device:GPU:1",
-            "cpu_dev": "/CPU:1",
+            "gpu_dev": "/device:GPU:2",
+            "cpu_dev": "/CPU:2",
             "object_name": "SKSTestNull",
             "class_name": "GMetrics.SKSTest",
             "kwargs": {
                 "nslices": 200,
-                "seed_slicing": 0,
+                "seed_slicing": 42,
                 "verbose": false
             },
             "result_key": "metric_means",
@@ -101,14 +101,14 @@
                 "batch_size_gen": 10000,
                 "small_sample_threshold": 1,
                 "dtype_input": "float32",
-                "seed_input": 0,
+                "seed_input": 42,
                 "use_tf": true,
                 "mirror_strategy": false,
                 "verbose": false
             },
             "max_vectorize": 10,
             "latex": "$t_{\\mathrm{SKS}}$",
-            "null_file": "/teo_fs_fast/projects/GENOVA/CaloChallenge/Dataset_3//Null/hlf_results/feature_ec_etas/batch_10000/null_hypotheses_batch_10000/SKS.json",
+            "null_file": "../results/Dataset_3//Null/hlf_results/feature_ec_etas/batch_10000/null_hypotheses_batch_10000/SKS.json",
             "thresholds": [
                 [
                     0.68,
@@ -116,7 +116,7 @@
                         680,
                         320
                     ],
-                    0.8793584108352661
+                    0.8792877197265625
                 ],
                 [
                     0.95,
@@ -124,7 +124,7 @@
                         950,
                         50
                     ],
-                    0.9573875665664673
+                    0.9460030794143677
                 ],
                 [
                     0.99,
@@ -132,19 +132,19 @@
                         990,
                         10
                     ],
-                    1.009041666984558
+                    0.9826666712760925
                 ]
             ]
         },
         "swd": {
             "name": "swd",
-            "gpu_dev": "/device:GPU:1",
-            "cpu_dev": "/CPU:1",
+            "gpu_dev": "/device:GPU:2",
+            "cpu_dev": "/CPU:2",
             "object_name": "SWDMetricNull",
             "class_name": "GMetrics.SWDMetric",
             "kwargs": {
                 "nslices": 200,
-                "seed_slicing": 0,
+                "seed_slicing": 42,
                 "verbose": false
             },
             "result_key": "metric_means",
@@ -156,14 +156,14 @@
                 "batch_size_gen": 10000,
                 "small_sample_threshold": 1,
                 "dtype_input": "float32",
-                "seed_input": 0,
+                "seed_input": 42,
                 "use_tf": true,
                 "mirror_strategy": false,
                 "verbose": false
             },
             "max_vectorize": 10,
             "latex": "$t_{\\mathrm{SW}}$",
-            "null_file": "/teo_fs_fast/projects/GENOVA/CaloChallenge/Dataset_3//Null/hlf_results/feature_ec_etas/batch_10000/null_hypotheses_batch_10000/SWD.json",
+            "null_file": "../results/Dataset_3//Null/hlf_results/feature_ec_etas/batch_10000/null_hypotheses_batch_10000/SWD.json",
             "thresholds": [
                 [
                     0.68,
@@ -171,7 +171,7 @@
                         680,
                         320
                     ],
-                    1.4751704931259155
+                    1.4485224485397339
                 ],
                 [
                     0.95,
@@ -179,7 +179,7 @@
                         950,
                         50
                     ],
-                    1.6192736625671387
+                    1.6123919486999512
                 ],
                 [
                     0.99,
@@ -187,7 +187,7 @@
                         990,
                         10
                     ],
-                    1.7588303089141846
+                    1.7296175956726074
                 ]
             ]
         }

@@ -29,10 +29,9 @@ import tensorflow_probability as tfp
 tfd = tfp.distributions
 sys.path.append('../') 
 import GMetrics
-sys.path.pop()
-
 sys.path.append('../CaloChallenge/code')
 import HighLevelFeatures as HLF
+
 gpus = tf.config.list_physical_devices('GPU')
 if gpus:
     try:
@@ -41,7 +40,7 @@ if gpus:
     except RuntimeError as e:
         print(e)
 
-sys.path.pop()
+
 from utils import BootstrapDistribution, PrefetchedKSTest, PrefetchedSKSTest, PrefetchedSWDMetric, PrefetchedMMDTest
 
 def extract_shower_and_energy(file_handle):
@@ -304,8 +303,8 @@ def main():
     if mode in ['all', 'hlf']:
         if verbose:
             print("Calculating High Level Features...")
-            
-        binning_path = '/teo_fs_fast/projects/GENOVA/CaloChallenge/CaloChallengeMetrics/CaloChallenge/code'
+        # assuming you're running the script from the /CaloChallenge/CaloChallengeMetrics/code/ directory
+        binning_path = '../CaloChallenge/code'
         filename = ''
         if particle_type == 'photon':
             if dataset != '1':

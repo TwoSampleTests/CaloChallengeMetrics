@@ -8,7 +8,7 @@
 /old/
 
 *__pycache__*
-*nohup.out*
+*nohup*
 
 /results/Dataset_1_photons/data/
 /results/Dataset_1_photons/alternative_hypotheses_modified/
@@ -26,3 +26,7 @@
 
 # Obsolete local copy; evaluation code is maintained in the independent CaloChallenge repository.
 /CaloChallengeCode/
+
+# Local Git metadata repair backups
+/.git.permission-backup-*/
+/.git.repaired/
